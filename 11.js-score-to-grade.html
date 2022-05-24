@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- น.ส.พรนภา สืบเสนาะ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-js-score-to-grade.html</title>
+</head>
+<body>
+    Input Score (0-100): <input type="text" name="" id="score">
+    <br>
+    <button onclick="grade()">Submit</button>
+    <br>
+    <br>
+    <p id="output"></p>
+    <script>
+        let s,g
+        function grade() {
+            s = document.getElementById('score').value
+          if (s  < 50) { g = 'grade=0'}
+              
+           else if(s <=59) { g ='grade=1' }
+            
+         else if(s <=69) { g = 'grade=2' }
+          
+         else if(s <=79) { g = 'grade=3' }
+           
+         else if(s >=80) { g = 'grade=4' }
+            
+            document.getElementById('output').innerHTML = g
+          
+        }
+    </script>
+</body>
+</html>
+
